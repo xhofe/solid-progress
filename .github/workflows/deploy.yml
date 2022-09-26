@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         platform: [ubuntu-latest]
-    name: Release
+    name: Deploy
     runs-on: ${{ matrix.platform }}
     steps:
       - name: Setup Node
