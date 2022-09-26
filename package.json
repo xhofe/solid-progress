@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "site": "pnpm --filter=site dev",
     "site:build": "pnpm --filter=site build",
-    "build": "pnpm --filter=solid-lib build",
-    "dev": "pnpm --filter=solid-lib dev"
+    "build": "pnpm --filter=solid-progress build",
+    "dev": "pnpm --filter=solid-progress dev"
   },
   "keywords": [],
   "author": "Xhofe",
-  "license": "ISC"
+  "license": "MIT"
 }

@@ -1,18 +1,19 @@
 {
-  "name": "solid-lib",
+  "name": "solid-progress",
   "version": "0.0.0",
   "description": "",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/solid-lib.umd.cjs",
-  "module": "./dist/solid-lib.js",
+  "main": "./dist/solid-progress.umd.cjs",
+  "module": "./dist/solid-progress.js",
   "exports": {
     ".": {
-      "import": "./dist/solid-lib.js",
-      "require": "./dist/solid-lib.umd.cjs"
-    }
+      "import": "./dist/solid-progress.js",
+      "require": "./dist/solid-progress.umd.cjs"
+    },
+    "./dist/style.css": "./dist/style.css"
   },
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -30,6 +31,7 @@
     "vite-plugin-solid": "^2.3.0"
   },
   "dependencies": {
+    "mitt": "^3.0.0",
     "solid-js": "^1.4.8"
   }
 }
