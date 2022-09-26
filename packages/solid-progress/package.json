@@ -16,6 +16,14 @@
     "./dist/style.css": "./dist/style.css"
   },
   "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xhofe/solid-progress.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Xhofe/solid-progress/issues"
+  },
+  "homepage": "https://xhofe.github.io/solid-progress/",
   "scripts": {
     "start": "vite",
     "dev": "vite",
