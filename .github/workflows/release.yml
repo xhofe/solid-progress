@@ -24,11 +24,16 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Copy README.md
+        run: |
+          cp ./README.md ./packages/solid-progress/README.md
+
       - name: Change version
         run: |
           version=$(git describe --abbrev=0 --tags)
           sed -i -e "s/0.0.0/$version/g" packages/solid-progress/package.json
           cat packages/solid-progress/package.json
+        
       - uses: pnpm/action-setup@v2.2.2
         name: Install pnpm
         id: pnpm-install
