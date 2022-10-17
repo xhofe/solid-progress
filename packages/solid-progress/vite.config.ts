@@ -14,7 +14,7 @@ export default defineConfig({
       process.env.NODE_ENV === "production"
         ? {
             entry: resolve(__dirname, "src/index.tsx"),
-            name: "SolidLib",
+            name: "SolidProgress",
             fileName: "solid-progress",
           }
         : undefined,
