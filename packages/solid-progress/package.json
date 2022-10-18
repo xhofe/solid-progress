@@ -6,12 +6,12 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/solid-progress.umd.cjs",
+  "main": "./dist/solid-progress.cjs",
   "module": "./dist/solid-progress.js",
   "exports": {
     ".": {
       "import": "./dist/solid-progress.js",
-      "require": "./dist/solid-progress.umd.cjs"
+      "require": "./dist/solid-progress.cjs"
     },
     "./dist/style.css": "./dist/style.css"
   },

@@ -14,17 +14,18 @@ export default defineConfig({
       process.env.NODE_ENV === "production"
         ? {
             entry: resolve(__dirname, "src/index.tsx"),
-            name: "SolidProgress",
+            // name: "SolidProgress",
             fileName: "solid-progress",
+            formats: ["es", "cjs"],
           }
         : undefined,
     rollupOptions: {
-      external: ["solid-js"],
-      output: {
-        globals: {
-          "solid-js": "Solidjs",
-        },
-      },
+      external: ["solid-js", "solid-js/web", "solid-js/store"],
+      // output: {
+      //   globals: {
+      //     "solid-js": "Solidjs",
+      //   },
+      // },
     },
   },
 });
