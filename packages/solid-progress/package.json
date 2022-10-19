@@ -1,8 +1,13 @@
 {
   "name": "solid-progress",
   "version": "0.0.0",
-  "description": "",
+  "description": "☘ A progress bar component for solidjs",
   "type": "module",
+  "keywords": [
+    "solidjs",
+    "progress",
+    "bar"
+  ],
   "files": [
     "dist"
   ],
